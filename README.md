@@ -29,3 +29,11 @@ npm test
 ```
 
 If network access is restricted, ensure dependencies are installed via a setup script.
+
+## Environment Variables
+
+Create a local `.env` or `.env.local` file based on `.env.example` and provide
+your Supabase credentials. These local files are ignored by Git. The
+`.env.test` file stored in the repository contains placeholder values
+(`example.supabase.co` and `test_key`) so tests can run without real secrets.
+CI environments should supply real credentials through encrypted variables.
